@@ -3,8 +3,7 @@ import time
 import shutil
 
 print("Finding user Desktop...")
-# DesktopPath = os.path.join(os.path.expanduser("~"), "Desktop")
-DesktopPath = os.path.join(os.path.expanduser("~"), "testdesktop")
+DesktopPath = os.path.join(os.path.expanduser("~"), "Desktop")
 if not os.path.exists(DesktopPath):
     DesktopPath = input('\033[31m' + "ERROR: Could not locate Desktop in user root. Please input the name of the folder you would like to organize: " + '\033[0m')
 print('\033[32m' + "User Desktop Found! " + DesktopPath + '\033[0m')
